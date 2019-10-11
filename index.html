@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--===============================================================================================-->
 <html lang='en'>
 <!--===============================================================================================-->
   <head>
@@ -26,26 +27,36 @@
 
 *{
   font-family: 'Inconsolata', monospace;
-  /* letter-spacing: 0.71px; */
 }
 
+.end-line
+{
+  position: fixed;
+  width: 100vw;
+	height: 5px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #0d4cba;
+}
 
 </style>
+</head>
 <!--===============================================================================================-->
 
 <body>
 
-<div class='container'>
+<div class='container-fluid-fluid'>
   <br>
 
-  <h1> Security & Standards Policy </h1>
-  <hr>
+  <h1 class='centerme'> Security & Standards Policy </h1>
   <hr>
 
+  <div class='container'>
   <h2> Overview </h2>
   <br>
 
-  <p>Through this Security & Standards (S&S) policy we seek to build upon existing standards and develop blueprints for the infrastructure of a modern, secure and trust worthy internet based organization.<br>
+  <p>Through this Security & Standards (S&S) Policy we seek to build upon existing standards and develop blueprints for the infrastructure of a modern, secure and trust worthy internet based organization.<br>
   <br>
   By setting these standards, we ensure that we maintain consistency and integrity in all our technological operations.</p>
   <hr>
@@ -157,6 +168,7 @@
     <li> SHA256 is the standard organization wide hashing algorithm for signatures and integrity checks.</li>
     <li> AES256 is the standard organization wide encryption algorithm for files.</li>
     <li> PGP is used for all email communications. </li>
+    <li> PGP are set with expiry dates. </li>
     <li> Wire/Telegram/Signal are the preferred E2EE Messengers for private communication </li>
     <li> Debian/CentOS are the preferred operating systems</li>
 
@@ -213,15 +225,16 @@
 
 <footer class='container-fluid footer centerme '>
 <br>
-<br>
 	<div class='container'>
 			<p class='centerme'><b>Sats.cc © 2019 Matrix Network International B.V. All Rights Reserved.</b> </p>
-			<hr>
 
 		<br>
+    <hr>
+
 	</div>
 </footer>
 <div class="end-line"></div>
+<!--===============================================================================================-->
 
 </html>
 <!--===============================================================================================-->
