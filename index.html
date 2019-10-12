@@ -33,11 +33,11 @@
 {
   position: fixed;
   width: 100vw;
-  height: 5px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #0d4cba;
+	height: 5px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #0d4cba;
 }
 
 </style>
@@ -49,7 +49,7 @@
 <div class='container-fluid-fluid'>
   <br>
 
-  <h1 class='centerme'> Security & Standards Policy </h1>
+  <h1 class='centerme'> Security & Standards Policy1 </h1>
   <hr>
 
   <div class='container'>
@@ -66,6 +66,8 @@
   <h2> Purpose</h2>
 
   <br>
+
+
   <p>The purpose of this document is to define a standard in systems secutiry at Matrix Network International B.V. and build strong security practices into our daily operations.</p>
     <p>This includes policies for the following: </p>
     <br>
@@ -121,8 +123,7 @@
     <li> <em>clamav</em> scans are conducted daily.</li>
     <li> Packages are updated daily.</li>
     <li> Log files are compressed daily and filed with a timestamped name.</li>
-    <li> Physical backups of all databases and keys are taken every 28 days.</li>
-    <li> All program logs are audited every 28 days and unrequired data deleted.</li>
+
 
   </ul>
   <br>
@@ -134,9 +135,9 @@
     <li> All programs communicating over the network implements SSL/TLS (either CA approved or Self-signed) </li>
     <li> Allow incoming connections via port 22, 80 and 443 and deny all other connections.</li>
     <li> Allow outgoing connections via port 443 and deny all other connections.</li>
-    <li> Incoming connections at port 80 must be redirected to port 443. </li>
+    <li> Incoming connections at port 80 are redirected to port 443. </li>
     <li> Communications with applications running on other ports are proxied via 443.</li>
-    <li> Port 22 for SSH, must only allow connections from whitelisted IPs; with wildcards for flexible admin access eg. Only allow IPS from India.</li>
+    <li> Port 22 for SSH, must only allow connections from whitelisted IPs; with optional wildcards for flexible admin access eg. Only allow IPS from India.</li>
     <li> IP Forwarding is disabled unless required.</li>
   </ul>
   <br>
@@ -157,6 +158,9 @@
     <li> All passwords set across departments must adhere to the password guidlines.</li>
     <li> Where available, 2FA/MFA is implemented.</li>
     <li> Cloud backups are configured with the associated service provider; to be as regular as possible.</li>
+    <li> Physical backups of all databases and keys are taken every 28 days.</li>
+    <li> All program logs are manually audited every 28 days and unrequired data deleted.</li>
+
   </ul>
 
   <hr>
@@ -168,6 +172,7 @@
     <li> SHA256 is the standard organization wide hashing algorithm for signatures and integrity checks.</li>
     <li> AES256 is the standard organization wide encryption algorithm for files.</li>
     <li> PGP is used for all email communications. </li>
+    <li> PGP are set with expiry dates. </li>
     <li> Wire/Telegram/Signal are the preferred E2EE Messengers for private communication </li>
     <li> Debian/CentOS are the preferred operating systems</li>
 
@@ -223,14 +228,14 @@
 <hr>
 
 <footer class='container-fluid footer centerme '>
-  <br>
-  <div class='container'>
-    <p class='centerme'><b>Sats.cc © 2019 Matrix Network International B.V. All Rights Reserved.</b> </p>
-    <br>
+<br>
+	<div class='container'>
+			<p class='centerme'><b>Sats.cc © 2019 Matrix Network International B.V. All Rights Reserved.</b> </p>
+
+		<br>
     <hr>
 
-  </div>
-	
+	</div>
 </footer>
 <div class="end-line"></div>
 <!--===============================================================================================-->
